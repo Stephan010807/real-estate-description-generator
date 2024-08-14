@@ -1,36 +1,130 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+KI-gestützter Immobilien-Beschreibungsgenerator (MVP)
 
-## Getting Started
+Übersicht
+Dieses Projekt ist ein Minimum Viable Product (MVP) eines KI-gestützten Immobilien-Beschreibungsgenerators, entwickelt für ein renommiertes Immobilienunternehmen in Hamburg. Es demonstriert die grundlegenden Funktionen und das Potenzial eines fortschrittlichen Tools zur automatischen Generierung von Immobilienbeschreibungen.
 
-First, run the development server:
+Wichtiger Hinweis: Dies ist eine öffentliche MVP-Version. Eine vollständig entwickelte, funktionsreiche Version existiert, kann aber aus Gründen der Vertraulichkeit und des Datenschutzes nicht öffentlich geteilt werden.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Hauptfunktionen des MVP
+Grundlegendes Eingabeformular: Erfassung wesentlicher Immobilieninformationen.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+KI-gestützte Beschreibungsgenerierung: Basisintegration von OpenAI's GPT-Modellen zur Erstellung von Immobilienbeschreibungen.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Einfache Mehrplattform-Unterstützung: Grundlegende Anpassung von Beschreibungen für Website, Instagram und TikTok.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Responsive Design: Anpassungsfähige Benutzeroberfläche für Desktop- und mobile Geräte.
 
-## Learn More
+- Datenbankintegration: Grundlegende Speicherung von Immobiliendaten und generierten Beschreibungen.
 
-To learn more about Next.js, take a look at the following resources:
+Unterschiede zur Vollversion
+Die nicht-öffentliche Vollversion beinhaltet zusätzlich:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Erweiterte KI-Funktionen und maßgeschneiderte Modelle
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Umfangreiche Integrationen mit internen Systemen des Immobilienunternehmens
 
-## Deploy on Vercel
+Fortgeschrittene Datenanalyse- und Reporting-Tools
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Erweiterte Sicherheits- und Datenschutzfunktionen
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Umfassende Anpassungen basierend auf Unternehmensfeedback und -anforderungen
+
+Technologie-Stack
+
+Frontend: React, Next.js, TypeScript
+
+UI-Bibliothek: Material-UI
+
+Formularverwaltung: react-hook-form
+
+Validierung: Yup
+
+Backend: Node.js mit Next.js API-Routen
+
+Datenbank: MongoDB
+
+- KI-Integration: OpenAI GPT-4 (Basisintegration)
+
+
+
+Projektstruktur
+
+/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   ├── utils/
+│   └── types.ts
+├── public/
+├── .env.local
+├── next.config.js
+├── package.json
+└── README.md
+
+
+Einrichtung und Installation
+
+1. Klonen Sie das Repository:
+   
+   git clone https://github.com/ihr-benutzername/immobilien-beschreibungsgenerator-mvp.git
+   
+2. Installieren Sie die Abhängigkeiten:
+   
+   cd immobilien-beschreibungsgenerator-mvp
+   npm install
+   
+3. Erstellen Sie eine `.env.local` Datei im Hauptverzeichnis und fügen Sie Ihre Umgebungsvariablen hinzu:
+   
+   MONGODB_URI=ihre_mongodb_uri
+   OPENAI_API_KEY=ihr_openai_api_schlüssel
+   
+4. Starten Sie den Entwicklungsserver:
+   
+   npm run dev
+   
+5. Öffnen Sie `http://localhost:3000` in Ihrem Browser.
+
+Nutzung
+
+Füllen Sie das Formular mit den grundlegenden Immobiliendetails aus.
+
+2. Wählen Sie die Zielplattform für die Beschreibung.
+
+3. Klicken Sie auf "Generieren", um eine Basis-KI-Beschreibung zu erstellen.
+
+4. Überprüfen Sie die generierte Beschreibung.
+
+
+
+
+
+
+
+
+Einschränkungen des MVP
+
+Begrenzte Funktionalität im Vergleich zur Vollversion
+
+Vereinfachte KI-Integration ohne unternehmensspezifische Anpassungen
+
+Grundlegende Datenbankfunktionen ohne erweiterte Sicherheitsmaßnahmen
+
+- Fehlende Integration mit internen Unternehmenssystemen
+
+Beitrag
+Während wir Interesse an diesem Projekt schätzen, beachten Sie bitte, dass dies ein MVP für ein spezifisches Unternehmensprodukt ist. Wesentliche Änderungen oder Erweiterungen werden intern verwaltet. Kleinere Verbesserungsvorschläge oder Fehlerkorrekturen sind jedoch willkommen.
+
+Lizenz
+Dieses MVP-Projekt ist unter der MIT-Lizenz lizenziert. Die Vollversion unterliegt separaten Lizenzvereinbarungen.
+
+Kontakt
+Für allgemeine Anfragen: stephanbrockmeier6@gmail.com
+
+Bitte beachten Sie, dass wir keine detaillierten Informationen zur Vollversion oder zu kundenspezifischen Implementierungen bereitstellen können.
+
+Danksagungen
+- [OpenAI](https://openai.com/) für die Bereitstellung der GPT-Modelle
+- [Material-UI](https://material-ui.com/) für die React-Komponenten
+- [MongoDB](https://www.mongodb.com/) für die Datenbankunterstützung
+
